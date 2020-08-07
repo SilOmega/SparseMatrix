@@ -36,8 +36,6 @@ private:
 
 	};
 
-	
-
 	node *head; ///< pointer to first element of the matrix
 	positive size; ///< number of element in the matrix
 	positive rows; ///< rows number of the matrix
@@ -60,7 +58,6 @@ private:
 			n = tmp2;
 			r = tmp2;
 		}
-
 
 		size = 0;
 		rows = 0;
@@ -86,7 +83,6 @@ public:
 		std::cout << "~sparse_matrix called" << std::endl;
 	}
 
-		
 	/**
 		Copy constructor
 		@param other matrix to copy
@@ -134,7 +130,6 @@ public:
 			clear();
 			throw;
 		}
-		
 	
 	}
 
@@ -150,9 +145,8 @@ public:
 			sparse_matrix tmp(other);
 			std::swap(size, tmp.size);
 			std::swap(head, tmp.head);
-
 		}
-
+		
 		return *this;
 
 	}
@@ -399,7 +393,6 @@ public:
 	}
 
 	
-
 };
 
 
